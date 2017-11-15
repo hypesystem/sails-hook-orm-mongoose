@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikermcneil/sails-hook-orm-mongoose.git"
+    "url": "git+https://github.com/cyborch/sails-hook-orm-mongoose.git"
   },
   "keywords": [
     "sails",
@@ -21,9 +21,9 @@
   "author": "Mike McNeil",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mikermcneil/sails-hook-orm-mongoose/issues"
+    "url": "https://github.com/cyborch/sails-hook-orm-mongoose/issues"
   },
-  "homepage": "https://github.com/mikermcneil/sails-hook-orm-mongoose#readme",
+  "homepage": "https://github.com/cyborch/sails-hook-orm-mongoose#readme",
   "dependencies": {
     "lodash": "^4.0.0",
     "mockgoose": "^7.3.3",
