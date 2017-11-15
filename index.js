@@ -120,13 +120,13 @@ module.exports = function (sails) {
         // Expose `sails.mongoose`.
         // (note that it's important to do this _before_ the other stuff below so that it is accessible for use in custom
         //  `constructSchema` interceptor functions, in case any of those are being used)
+
         if (sails.config.mongoose.mockgoose) {
           var Mockgoose = require('mockgoose').Mockgoose;
-          mockgoose = new Mockgoose(mongoose);
+          sails.mockgoose = new Mockgoose(mongoose);
         }
 
         sails.mongoose = mongoose;
-
 
         // Connect to the configured database using Mongoose.
         // (note that there is no callback:  this seems to be ok though.  Mongoose docs state that operations begun before
@@ -270,7 +270,7 @@ module.exports = function (sails) {
           });//</dbConnection.once('open')>
         }
         if (sails.config.mongoose.mockgoose) {
-          mockgoose.prepareStorage().then(function () {
+          sails.mockgoose.prepareStorage().then(function () {
             connectToDb();
           });
         } else {
