@@ -26,6 +26,7 @@
   "homepage": "https://github.com/mikermcneil/sails-hook-orm-mongoose#readme",
   "dependencies": {
     "lodash": "^4.0.0",
+    "mockgoose": "^7.3.3",
     "mongoose": "^4.3.6"
   },
   "sails": {
