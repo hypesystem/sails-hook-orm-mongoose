@@ -124,7 +124,7 @@ module.exports = function (sails) {
         if (sails.config.mongoose.mockgoose) {
           var Mockgoose = require('mockgoose').Mockgoose;
           sails.mockgoose = new Mockgoose(mongoose);
-          sails.mockgoose.helper.setDbVersion("3.2.1");
+          sails.mockgoose.helper.setDbVersion("3.2.19");
         }
 
         sails.mongoose = mongoose;
